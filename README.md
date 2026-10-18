@@ -77,3 +77,9 @@ dsh plugin --profile web remove dsh-starry-theme
 ## 许可
 
 MIT
+
+## 截图
+
+![星空蓝主题](preview.html 的效果见下)
+
+界面预览请直接在浏览器打开仓库里的 `preview.html`；或在装好插件后到「设置 → 主题」切换对比。
