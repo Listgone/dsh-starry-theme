@@ -1,0 +1,55 @@
+{
+  "name": "dsh-starry-theme",
+  "version": "1.3.0",
+  "description": "DeepSeek Harness 主题：星空蓝。深蓝夜空、星点、海浪与大鲸鱼，全局深色配色，文字保持高对比。",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "dark-theme"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-primitives",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Listgone/dsh-starry-theme.git"
+  },
+  "homepage": "https://github.com/Listgone/dsh-starry-theme#readme",
+  "bugs": {
+    "url": "https://github.com/Listgone/dsh-starry-theme/issues"
+  },
+  "license": "MIT"
+}

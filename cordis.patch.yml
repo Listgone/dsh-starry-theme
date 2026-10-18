@@ -1,0 +1,5 @@
+# dsh-starry-theme bundle 层：装配「设置 → 主题」默认 / 星空蓝主题。
+- insert:
+    - id: dsh-starry-theme
+      name: 'dsh-starry-theme'
+      config: {}
